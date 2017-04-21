@@ -9,15 +9,13 @@
 		<form>
 			<article>
 				<p>
-				<input type="text" name="temp" id="tempInput" placeholder="Enter Temperature"></p>
-				<input type="radio" name="temptype" id="C">Fahrenheit<br>
-				<input type="radio" name="temptype" id="F">Celsius<br>
-			</article>
-			<article>
-				<p id="output">Converted Temp: </p>
-				<button id="converter">Convert  Now!</button>
+				<input type="number"  id="number" placeholder="Enter Temperature"></p>
+				<input type="radio" name="scale" value="fahrenheit" id="fah">Fahrenheit<br>
+				<input type="radio" name="scale" value="celsius" id="cel">Celsius<br>
+				<button type="button" id="converter">Convert  Now!</button>
 				<button id="clear">Clear!</button>
 			</article>
+			<div id="output"></div>
 		</form>
 		<script type="text/javascript" src="converter.js"></script>
 	</body>
